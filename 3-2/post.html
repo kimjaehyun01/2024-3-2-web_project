@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>판매글 작성 - 한경국립대학교 전공교재 중고거래</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <!-- 동일한 헤더를 사용합니다 -->
+    </header>
+    <main>
+        <h2>판매글 작성</h2>
+        <form action="submit_post.html" method="post">
+            <label for="title">교재 제목:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="title">강의명:</label>
+            <input type="text" id="lecture_name" name="lecture_name" required>
+
+            <label for="author">저자:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="publisher">출판사:</label>
+            <input type="text" id="publisher" name="publisher" required>
+
+            <label for="price">가격:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="condition">상태:</label>
+            <select id="condition" name="condition">
+                <option value="최상">최상</option>
+                <option value="상">상</option>
+                <option value="중">중</option>
+                <option value="하">하</option>
+            </select>
+
+            <label for="description">설명:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="submit">등록하기</button>
+        </form>
+    </main>
+    <!-- 푸터 -->
+    <footer>
+        <!-- 동일한 푸터를 사용합니다 -->
+    </footer>
+</body>
+</html>
